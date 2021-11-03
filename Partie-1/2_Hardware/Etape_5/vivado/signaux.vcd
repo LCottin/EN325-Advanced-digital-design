@@ -1,0 +1,79 @@
+$date
+  Wed Oct 13 10:04:12 2021
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module pgcd_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$var reg 32 # idata_a[31:0] $end
+$var reg 32 $ idata_b[31:0] $end
+$var reg 1 % idata_en $end
+$var reg 32 & odata[31:0] $end
+$var reg 1 ' odata_en $end
+$var reg 1 ( stop_the_clock $end
+$scope module uut $end
+$var reg 1 ) clk $end
+$var reg 1 * reset $end
+$var reg 32 + idata_a[31:0] $end
+$var reg 32 , idata_b[31:0] $end
+$var reg 1 - idata_en $end
+$var reg 32 . odata[31:0] $end
+$var reg 1 / odata_en $end
+$comment current_state is not handled $end
+$comment next_state is not handled $end
+$var reg 32 0 a[31:0] $end
+$var reg 32 1 b[31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+b00000000000000000000000000000000 #
+b00000000000000000000000000000000 $
+0%
+b00000000000000000000000000000000 &
+0'
+0(
+0)
+1*
+b00000000000000000000000000000000 +
+b00000000000000000000000000000000 ,
+0-
+b00000000000000000000000000000000 .
+0/
+b00000000000000000000000000000000 0
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU 1
+#5000000
+1!
+0"
+1)
+0*
+b00000000000000000000000000000000 1
+#10000000
+0!
+b00000000000000000000000000001010 $
+1%
+0)
+b00000000000000000000000000001010 ,
+1-
+b00000000000000000000000000001010 1
+#15000000
+1!
+1)
+#20000000
+0!
+0%
+0)
+0-

@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -Wall -O3 -march=native -mtune=native -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -lm CMakeFiles/main.dir/src/main.c.o -o main 

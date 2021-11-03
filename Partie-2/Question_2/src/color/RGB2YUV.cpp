@@ -22,7 +22,9 @@
 
 void RGB2YUV(const int32_t din[3], int32_t dout[3])
 {
-
+    dout[0]  = (0.299  * din[0] + 0.587  * din[1] + 0.114  * din[2]);
+    dout[1] = (-0.1687 * din[0] - 0.3313 * din[1] + 0.5    * din[2] + 128);
+    dout[2] = (0.5     * din[0] - 0.4187 * din[1] - 0.0813 * din[2] + 128);
 }
 
 void RGB2YUV(const uint8_t din[192], int32_t dout[192])

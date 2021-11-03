@@ -23,9 +23,11 @@
 // Usefull macro functions
 //
 
-void YUV2RGB(const int32_t din[192], int32_t dout[192])
+void YUV2RGB(const int32_t din[3], int32_t dout[3])
 {
-
+    dout[0] = din[0] + 1.402       * (din[2] - 128);
+    dout[1] = din[0] - 0.344414    * (din[1] - 128) - 0.71414 * (din[2] - 128);
+    dout[2] = din[0] + 1.772       * (din[1] - 128);
 }
 
 void YUV2RGB(const int32_t din[192], uint8_t dout[192])
