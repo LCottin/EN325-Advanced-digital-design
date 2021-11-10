@@ -22,19 +22,15 @@
 
 void RGB2YUV(const uint8_t din[3], uint8_t dout[3])
 {
-    ap_fixed<8, 1, AP_RND> R1 = 0.299,   G1 = 0.587,   B1 = 0.114;
-    ap_fixed<8, 1, AP_RND> R2 = -0.1687, G2 = -0.3313, B2 = 0.5;
-    ap_fixed<8, 1, AP_RND> R3 = 0.5,     G3 = -0.4187, B3 = -0.0813;
+    ap_fixed<8, 1, AP_RND, AP_WRAP> R1 = 0.299,   G1 = 0.587,   B1 = 0.114;
+    ap_fixed<8, 1, AP_RND, AP_WRAP> R2 = -0.1687, G2 = -0.3313, B2 = 0.5;
+    ap_fixed<8, 1, AP_RND, AP_WRAP> R3 = 0.5,     G3 = -0.4187, B3 = -0.0813;
 
-    dout[0] = (R1 * din[0] + G1 * din[1] + B1 * din[2]      );
-    dout[1] = (R2 * din[0] + G2 * din[1] + B2 * din[2] + 128);
-    dout[2] = (R3 * din[0] + G3 * din[1] + B3 * din[2] + 128);
+    ap_ufixed<8, 8, AP_RND, AP_SAT> Y  = R1 * din[0] + G1 * din[1] + B1 * din[2];
+    ap_ufixed<8, 8, AP_RND, AP_SAT> Cb = R2 * din[0] + G2 * din[1] + B2 * din[2] + 128;
+    ap_ufixed<8, 8, AP_RND, AP_SAT> Cr = R3 * din[0] + G3 * din[1] + B3 * din[2] + 128;
 
-    dout[0] = (dout[0] > 255) ? 255 : dout[0];
-    dout[1] = (dout[1] > 255) ? 255 : dout[1];
-    dout[2] = (dout[2] > 255) ? 255 : dout[2];
-
-    dout[0] = (dout[0] < 0) ? 0 : dout[0];
-    dout[1] = (dout[1] < 0) ? 0 : dout[1];
-    dout[2] = (dout[2] < 0) ? 0 : dout[2];
+    dout[0] = Y;
+    dout[1] = Cb;
+    dout[2] = Cr;
 }

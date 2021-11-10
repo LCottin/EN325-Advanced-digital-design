@@ -102,7 +102,6 @@ int main(int argc, char* argv[])
     img_diff(pic_in, pic_out);
 
     pic_out.write( "PictureOut.bmp" );
-
     clock_t end = clock();
 
     printf ("max_value: %1.8f sec\n", ((float) end - start)/CLOCKS_PER_SEC);

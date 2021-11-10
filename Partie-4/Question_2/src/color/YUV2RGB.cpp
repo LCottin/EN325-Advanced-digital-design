@@ -14,19 +14,16 @@
  * limitations under the License.
  */
 
-#include <cstdio>
-#include <cstdlib>
-#include <cstdint>
+#include "YUV2RGB.hpp"
 
-#define MIN(a,b) ((a<b)?a:b)
-#define MAX(a,b) ((a<b)?b:a)
-#define LIMIT(a,b,c) MIN(MAX(a,b),c)
-
+//
+// Usefull macro functions
+//
 inline int32_t min (int32_t a, int32_t b           ){ return ((a<b)?a:b); }
 inline int32_t max (int32_t a, int32_t b           ){ return ((a>b)?a:b); }
 inline int32_t clip(int32_t a, int32_t b, int32_t c){ return min(max(a,b),c); }
 
-void YUV2RGB(const int32_t din[192], int32_t dout[192])
+void YUV2RGB(const uint8_t din[3], uint8_t dout[3])
 {
         const int32_t y = din[0];
         const int32_t u = din[1];
@@ -39,16 +36,4 @@ void YUV2RGB(const int32_t din[192], int32_t dout[192])
         dout[0] = clip(r, 0, 255);
         dout[1] = clip(g, 0, 255);
         dout[2] = clip(b, 0, 255);
-}
-
-void YUV2RGB(const int32_t din[192], uint8_t dout[192])
-{
-    int32_t conv[3];
-    for(int32_t k = 0; k < 192; k += 3)
-    {
-        YUV2RGB(din + k, conv);
-
-        for(int32_t i = 0; i < 3; i++)                 // Conversion des donnees de type int32_t
-            dout[k+i] = conv[i] > 255 ? 255 : conv[i]; // en données de type uint8_t
-    }
 }
