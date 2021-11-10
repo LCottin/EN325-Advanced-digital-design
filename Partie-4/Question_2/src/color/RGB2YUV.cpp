@@ -40,22 +40,22 @@ void RGB2YUV(const uint8_t din[3], uint8_t dout[3])
     const ap_int<W + STEP> G3 = round(-0.4187  * (1 << W));
     const ap_int<W + STEP> B3 = round(-0.0813  * (1 << W));
 
+#if 1
     ap_int<8 + 1> Y  =  (R1 * din[0] + G1 * din[1] + B1 * din[2]) >> W;
     ap_int<8 + 1> Cb = ((R2 * din[0] + G2 * din[1] + B2 * din[2]) >> W) + 128;
     ap_int<8 + 1> Cr = ((R3 * din[0] + G3 * din[1] + B3 * din[2]) >> W) + 128;
 
-    /*
-    ap_int<8 + W + 2> Y  =  R1 * din[0] + G1 * din[1] + B1 * din[2];
-    ap_int<8 + W + 2> Cb =  R2 * din[0] + G2 * din[1] + B2 * din[2] + (128 << W);
-    ap_int<8 + W + 2> Cr =  R3 * din[0] + G3 * din[1] + B3 * din[2] + (128 << W);
+#else
+    ap_int<8 + W + W> Y  =  R1 * din[0] + G1 * din[1] + B1 * din[2];
+    ap_int<8 + W + W> Cb =  R2 * din[0] + G2 * din[1] + B2 * din[2];
+    ap_int<8 + W + W> Cr =  R3 * din[0] + G3 * din[1] + B3 * din[2];
 
-    ap_int<8 + W> Y1    = Y >> W;
-    ap_int<8 + W> Cb1   = Cb >> W;
-    ap_int<8 + W> Cr1   = Cr >> W;
-    */
+    ap_int<8 + W + 2> Y1    = Y >> W;
+    ap_int<8 + W + 2> Cb1   = (Cb >> W) + 128 ;
+    ap_int<8 + W + 2> Cr1   = (Cr >> W) + 128 ;
+#endif
 
     dout[0] = clip(Y,  0, 255);
     dout[1] = clip(Cb, 0, 255);
     dout[2] = clip(Cr, 0, 255);
-
 }
