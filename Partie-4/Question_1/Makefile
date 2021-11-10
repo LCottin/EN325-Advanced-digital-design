@@ -1,12 +1,17 @@
-CC=g++ -O2 -Wall
-CFLAGS=
+CC=g++
+CFLAGS=-O3 -Wall -std=c++11 -I./include/
 LDFLAGS=
+
 EXEC=main
-SRC=./src/main.cpp
+
+SRC=./src/color/RGB2YUV.cpp \
+	./src/color/YUV2RGB.cpp \
+	./src/tools/analysis.cpp \
+	./src/tools/converter.cpp \
+	./src/tools/img_diff.cpp \
+	./src/main.cpp
 	
 OBJ= $(SRC:.cpp=.o)
-
-CFLAGS=
 
 all: $(EXEC)
 
@@ -21,6 +26,3 @@ main: $(OBJ)
 clean:
 	find . -name "*.o" -delete
 	find ./bin/$(EXEC) -delete
-
-mrproper: clean
-	rm $(EXEC)
