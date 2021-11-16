@@ -57,7 +57,7 @@ begin
                 end if;
                 
             when compute =>
-                --assert (idata_en = '0') report "Load while computing" severity failure;
+                assert (idata_en = '0') report "Load while computing" severity failure;
                 
                 if (A = B) then
                     next_state <= output;
@@ -68,8 +68,8 @@ begin
             when output => 
                 --outputs asserts
                 assert (idata_en = '0') report "Load while getting outputs" severity failure;
-                --assert (A1 >= A) report "Output bigger than input" severity failure;
-                --assert (B1 >= B) report "Output bigger than input" severity failure;
+                assert (A1 >= A) report "Output bigger than input" severity failure;
+                assert (B1 >= B) report "Output bigger than input" severity failure;
                 assert (A >= 0) report "Negative output" severity failure;
                 next_state <= init;
         end case;
