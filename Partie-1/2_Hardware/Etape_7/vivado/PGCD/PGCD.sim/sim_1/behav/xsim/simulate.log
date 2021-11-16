@@ -1,0 +1,32 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Note: cpt : 12
+Time: 135 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 3
+Time: 185 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 12
+Time: 325 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 16
+Time: 505 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 14
+Time: 665 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 19
+Time: 875 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 17
+Time: 1065 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 6
+Time: 1145 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 16
+Time: 1325 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 23
+Time: 1575 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 17
+Time: 1765 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 9
+Time: 1875 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 17
+Time: 2065 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 19
+Time: 2275 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd
+Note: cpt : 14
+Time: 2435 ns  Iteration: 1  Process: /PGCD_tb/uut/calcul_nxt  File: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_6/PGCD/PGCD.srcs/sources_1/new/PGCD.vhd

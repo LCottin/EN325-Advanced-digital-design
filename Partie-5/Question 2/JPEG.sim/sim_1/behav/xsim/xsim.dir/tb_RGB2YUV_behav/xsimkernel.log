@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_RGB2YUV_behav/xsimk -simmode gui -wdb tb_RGB2YUV_behav.wdb -simrunnum 0 -socket 47376
+Design successfully loaded
+Design Loading Memory Usage: 44436 KB (Peak: 44436 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 126176 KB (Peak: 191712 KB)
+Simulation CPU Usage: 120 ms

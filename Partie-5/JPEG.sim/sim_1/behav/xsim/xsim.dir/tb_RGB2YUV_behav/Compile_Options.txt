@@ -1,0 +1,1 @@
+-wto "21195b3bcf934a5eb43add72dcbd675b" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "tb_RGB2YUV_behav" "xil_defaultlib.tb_RGB2YUV" -log "elaborate.log" 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="PGCD_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="PGCD_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="181600001fs"></ZoomEndTime>
+      <Cursor1Time time="60200000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject type="logic" fp_name="/PGCD_tb/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/PGCD_tb/RESET">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider25" type="divider">
+   </wvobject>
+   <wvobject type="logic" fp_name="/PGCD_tb/idata_en">
+      <obj_property name="ElementShortName">idata_en</obj_property>
+      <obj_property name="ObjectShortName">idata_en</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/PGCD_tb/idata_a">
+      <obj_property name="ElementShortName">idata_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">idata_a[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/PGCD_tb/idata_b">
+      <obj_property name="ElementShortName">idata_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">idata_b[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider26" type="divider">
+   </wvobject>
+   <wvobject type="logic" fp_name="/PGCD_tb/odata_en">
+      <obj_property name="ElementShortName">odata_en</obj_property>
+      <obj_property name="ObjectShortName">odata_en</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/PGCD_tb/odata">
+      <obj_property name="ElementShortName">odata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">odata[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider26" type="divider">
+   </wvobject>
+   <wvobject type="other" fp_name="/PGCD_tb/uut/current">
+      <obj_property name="ElementShortName">current</obj_property>
+      <obj_property name="ObjectShortName">current</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/PGCD_tb/uut/nxt">
+      <obj_property name="ElementShortName">nxt</obj_property>
+      <obj_property name="ObjectShortName">nxt</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/PGCD_tb/uut/A">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/PGCD_tb/uut/B">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

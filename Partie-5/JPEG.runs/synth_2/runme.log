@@ -1,0 +1,283 @@
+
+*** Running vivado
+    with args -log RGB2YUV.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RGB2YUV.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source RGB2YUV.tcl -notrace
+Command: synth_design -top RGB2YUV -part xc7a100tcsg324-1 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10230 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1418.969 ; gain = 86.836 ; free physical = 8564 ; free virtual = 26705
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RGB2YUV' [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-5/JPEG.srcs/sources_1/new/RGB2YUV.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'RGB2YUV' (1#1) [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-5/JPEG.srcs/sources_1/new/RGB2YUV.vhd:15]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1462.609 ; gain = 130.477 ; free physical = 8552 ; free virtual = 26694
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1462.609 ; gain = 130.477 ; free physical = 8551 ; free virtual = 26693
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1470.602 ; gain = 138.469 ; free physical = 8549 ; free virtual = 26691
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element r_reg was removed.  [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-5/JPEG.srcs/sources_1/new/RGB2YUV.vhd:38]
+WARNING: [Synth 8-6014] Unused sequential element g_reg was removed.  [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-5/JPEG.srcs/sources_1/new/RGB2YUV.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-5/JPEG.srcs/sources_1/new/RGB2YUV.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-5/JPEG.srcs/sources_1/new/RGB2YUV.vhd:46]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-5/JPEG.srcs/sources_1/new/RGB2YUV.vhd:48]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-5/JPEG.srcs/sources_1/new/RGB2YUV.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1478.609 ; gain = 146.477 ; free physical = 8562 ; free virtual = 26704
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	               17 Bit    Registers := 3     
+	                9 Bit    Registers := 9     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RGB2YUV 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	               17 Bit    Registers := 3     
+	                9 Bit    Registers := 9     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (v_int_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\r_reg[8]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_reg[8]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_reg[8]__1 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\r_reg[8]__1 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\r_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (valid_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (o_valid_reg)
+WARNING: [Synth 8-3332] Sequential element (r_reg[8]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (g_reg[8]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (y_q_reg[6]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (y_q_reg[5]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (y_q_reg[4]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (y_q_reg[3]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (y_q_reg[2]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (y_q_reg[1]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (y_q_reg[0]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (r_reg[8]__0) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (g_reg[8]__0) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (v_q_reg[6]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (v_q_reg[5]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (v_q_reg[4]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (v_q_reg[3]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (v_q_reg[2]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (v_q_reg[1]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (v_q_reg[0]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (r_reg[8]__1) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (g_reg[8]__1) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (u_q_reg[6]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (u_q_reg[5]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (u_q_reg[4]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (u_q_reg[3]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (u_q_reg[2]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (u_q_reg[1]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (u_q_reg[0]) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (v_int_reg) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (valid_reg) is unused and will be removed from module RGB2YUV.
+WARNING: [Synth 8-3332] Sequential element (o_valid_reg) is unused and will be removed from module RGB2YUV.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1603.965 ; gain = 271.832 ; free physical = 9487 ; free virtual = 27631
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1603.969 ; gain = 271.836 ; free physical = 9487 ; free virtual = 27631
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1613.980 ; gain = 281.848 ; free physical = 9486 ; free virtual = 27629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1613.984 ; gain = 281.852 ; free physical = 9486 ; free virtual = 27629
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1613.984 ; gain = 281.852 ; free physical = 9486 ; free virtual = 27629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1613.984 ; gain = 281.852 ; free physical = 9486 ; free virtual = 27629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1613.984 ; gain = 281.852 ; free physical = 9486 ; free virtual = 27629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1613.984 ; gain = 281.852 ; free physical = 9486 ; free virtual = 27629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1613.984 ; gain = 281.852 ; free physical = 9486 ; free virtual = 27629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    66|
+|3     |LUT1   |    16|
+|4     |LUT2   |   190|
+|5     |LUT3   |    25|
+|6     |LUT4   |    18|
+|7     |LUT5   |    14|
+|8     |LUT6   |    15|
+|9     |FDRE   |   102|
+|10    |FDSE   |    24|
+|11    |IBUF   |    26|
+|12    |OBUF   |    25|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   522|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1613.984 ; gain = 281.852 ; free physical = 9486 ; free virtual = 27629
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1613.984 ; gain = 281.852 ; free physical = 9489 ; free virtual = 27633
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1613.988 ; gain = 281.852 ; free physical = 9499 ; free virtual = 27643
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 1750.148 ; gain = 430.633 ; free physical = 9462 ; free virtual = 27605
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-5/JPEG.runs/synth_2/RGB2YUV.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RGB2YUV_utilization_synth.rpt -pb RGB2YUV_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1774.172 ; gain = 0.000 ; free physical = 9462 ; free virtual = 27605
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 16 11:30:24 2021...

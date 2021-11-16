@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1634633633">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="PGCD_uart.drc"/>
+  <File Type="BG-BGN" Name="PGCD_uart.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="PGCD_uart.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="PGCD_uart.ltx"/>
+  <File Type="BITSTR-MMI" Name="PGCD_uart.mmi"/>
+  <File Type="BITSTR-BMM" Name="PGCD_uart_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="PGCD_uart.nky"/>
+  <File Type="BITSTR-RBT" Name="PGCD_uart.rbt"/>
+  <File Type="BITSTR-MSK" Name="PGCD_uart.msk"/>
+  <File Type="BG-BIN" Name="PGCD_uart.bin"/>
+  <File Type="BG-BIT" Name="PGCD_uart.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PGCD_uart_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="PGCD_uart_bus_skew_postroute_physopted.pb"/>
+  <File Type="RDI-RDI" Name="PGCD_uart.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PGCD_uart_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PGCD_uart_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PGCD_uart_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PGCD_uart_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PGCD_uart_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="PGCD_uart_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="PGCD_uart_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="PGCD_uart_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PGCD_uart_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="PGCD_uart_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PGCD_uart_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PGCD_uart_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="PGCD_uart_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="PGCD_uart_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="PGCD_uart_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="PGCD_uart_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PGCD_uart_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PGCD_uart_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PGCD_uart_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="PGCD_uart_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="PGCD_uart_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="PGCD_uart_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PGCD_uart_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="PGCD_uart_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="PGCD_uart_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="PGCD_uart_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="PGCD_uart_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="PGCD_uart_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="PGCD_uart_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PGCD_uart_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="PGCD_uart_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PGCD_uart_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="PGCD_uart_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="PGCD_uart_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PGCD_uart_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="PGCD_uart_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="PGCD_uart_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="PGCD_uart_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="PGCD_uart_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="PGCD_uart_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="PGCD_uart_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="PGCD_uart_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="PGCD_uart_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="PGCD_uart.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="PGCD_uart_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="PGCD_uart_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="PGCD_uart_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="PGCD_uart_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="PGCD_uart_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="PGCD_uart_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="PGCD_uart_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="PGCD_uart.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="PGCD_uart_bus_skew_postroute_physopted.rpt"/>
+  <File Type="PA-DCP" Name="PGCD_uart.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../src/PGCD.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/uart_recv.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/UART_send.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/PGCD_uart.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PGCD_uart"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/xdc/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xdc/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1634019274"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/xdc/Nexys-A7-100T-Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 19 08:51:13 2021
+# Process ID: 18784
+# Current directory: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/vivado/PGCD/PGCD.runs/impl_1
+# Command line: vivado -log PGCD.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PGCD.tcl -notrace
+# Log file: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/vivado/PGCD/PGCD.runs/impl_1/PGCD.vdi
+# Journal file: /net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/vivado/PGCD/PGCD.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source PGCD.tcl -notrace

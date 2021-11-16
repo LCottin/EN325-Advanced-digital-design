@@ -1,0 +1,479 @@
+
+*** Running vivado
+    with args -log PGCD_uart.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PGCD_uart.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source PGCD_uart.tcl -notrace
+Command: synth_design -top PGCD_uart -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21727 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1418.965 ; gain = 86.836 ; free physical = 8119 ; free virtual = 28744
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PGCD_uart' [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/PGCD_uart.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'UART_recv' [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/uart_recv.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'UART_recv' (1#1) [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/uart_recv.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'PGCD' [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/PGCD.vhd:48]
+WARNING: [Synth 8-6014] Unused sequential element cpt_reg was removed.  [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/PGCD.vhd:129]
+WARNING: [Synth 8-6014] Unused sequential element A_init_reg was removed.  [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/PGCD.vhd:124]
+WARNING: [Synth 8-6014] Unused sequential element B_init_reg was removed.  [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/PGCD.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'PGCD' (2#1) [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/PGCD.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'UART_fifoed_send' [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/UART_send.vhd:33]
+	Parameter fifo_size bound to: 2048 - type: integer 
+	Parameter fifo_almost bound to: 508 - type: integer 
+	Parameter drop_oldest_when_full bound to: 0 - type: bool 
+	Parameter asynch_fifo_full bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'UART_fifoed_send' (3#1) [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/UART_send.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'PGCD_uart' (4#1) [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/PGCD_uart.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1462.605 ; gain = 130.477 ; free physical = 8128 ; free virtual = 28754
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1462.605 ; gain = 130.477 ; free physical = 8129 ; free virtual = 28754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1462.605 ; gain = 130.477 ; free physical = 8129 ; free virtual = 28754
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/vivado/vivado.srcs/constrs_1/imports/xdc/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/vivado/vivado.srcs/constrs_1/imports/xdc/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/vivado/vivado.srcs/constrs_1/imports/xdc/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PGCD_uart_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PGCD_uart_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1845.074 ; gain = 0.000 ; free physical = 7764 ; free virtual = 28390
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7932 ; free virtual = 28558
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7932 ; free virtual = 28558
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7934 ; free virtual = 28560
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_recv'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nbbits" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nbbits" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/PGCD.vhd:137]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/src/PGCD.vhd:137]
+INFO: [Synth 8-802] inferred FSM for state register 'current_reg' in module 'PGCD'
+INFO: [Synth 8-5545] ROM "A" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "A" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "B" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "B" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fifo_empty" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "let_s_go" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                              000
+           zero_as_input |                              110 |                              001
+           wait_next_bit |                              100 |                              010
+              bit_sample |                              101 |                              011
+            bit_received |                              011 |                              100
+           wait_stop_bit |                              010 |                              101
+        last_bit_is_zero |                              000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UART_recv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_reg' using encoding 'sequential' in module 'PGCD'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7925 ; free virtual = 28551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	              16K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   7 Input     10 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 20    
+	   7 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PGCD_uart 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module UART_recv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   7 Input     10 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 1     
+Module PGCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+Module UART_fifoed_send 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   3 Input     10 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_empty" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "let_s_go" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[0]' (FDRE) to 'snd/read_index_reg[0]'
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[1]' (FDRE) to 'snd/read_index_reg[1]'
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[2]' (FDRE) to 'snd/read_index_reg[2]'
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[3]' (FDRE) to 'snd/read_index_reg[3]'
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[4]' (FDRE) to 'snd/read_index_reg[4]'
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[5]' (FDRE) to 'snd/read_index_reg[5]'
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[9]' (FDRE) to 'snd/read_index_reg[9]'
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[10]' (FDRE) to 'snd/read_index_reg[10]'
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[8]' (FDRE) to 'snd/read_index_reg[8]'
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[7]' (FDRE) to 'snd/read_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'snd/read_index_reg_rep[6]' (FDRE) to 'snd/read_index_reg[6]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7909 ; free virtual = 28537
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------+-----------+----------------------+------------------------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives                   | 
++------------+--------------+-----------+----------------------+------------------------------+
+|PGCD_uart   | snd/FIFO_reg | Implied   | 2 K x 8              | RAM64X1D x 64  RAM64M x 64   | 
++------------+--------------+-----------+----------------------+------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7785 ; free virtual = 28414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:35 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7778 ; free virtual = 28406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------+-----------+----------------------+------------------------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives                   | 
++------------+--------------+-----------+----------------------+------------------------------+
+|PGCD_uart   | snd/FIFO_reg | Implied   | 2 K x 8              | RAM64X1D x 64  RAM64M x 64   | 
++------------+--------------+-----------+----------------------+------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7775 ; free virtual = 28404
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7776 ; free virtual = 28404
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7776 ; free virtual = 28404
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7776 ; free virtual = 28404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7776 ; free virtual = 28404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7776 ; free virtual = 28404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7776 ; free virtual = 28404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    47|
+|3     |LUT1     |    19|
+|4     |LUT2     |    45|
+|5     |LUT3     |    71|
+|6     |LUT4     |   216|
+|7     |LUT5     |    98|
+|8     |LUT6     |   156|
+|9     |MUXF7    |    32|
+|10    |MUXF8    |    14|
+|11    |RAM64M   |    64|
+|12    |RAM64X1D |    64|
+|13    |FDCE     |    66|
+|14    |FDRE     |   207|
+|15    |FDSE     |    13|
+|16    |IBUF     |     3|
+|17    |OBUF     |    17|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------+-----------------+------+
+|      |Instance      |Module           |Cells |
++------+--------------+-----------------+------+
+|1     |top           |                 |  1133|
+|2     |  PGCD_ENGINE |PGCD             |   436|
+|3     |  rcv         |UART_recv        |   101|
+|4     |  snd         |UART_fifoed_send |   454|
++------+--------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7776 ; free virtual = 28404
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1845.074 ; gain = 130.477 ; free physical = 7831 ; free virtual = 28459
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1845.074 ; gain = 512.945 ; free physical = 7841 ; free virtual = 28470
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 224 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 64 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 1845.078 ; gain = 525.566 ; free physical = 7831 ; free virtual = 28459
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/net/e/fpouget001/SE/EN325-Advanced-digital-design/Partie-1/2_Hardware/Etape_7/vivado/vivado.runs/synth_1/PGCD_uart.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PGCD_uart_utilization_synth.rpt -pb PGCD_uart_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1869.098 ; gain = 0.000 ; free physical = 7830 ; free virtual = 28459
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 19 08:59:18 2021...
