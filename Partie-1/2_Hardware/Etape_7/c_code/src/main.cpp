@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 /*
  * EN325-Advanced-digital-design teaching lab.
  * 
@@ -18,13 +17,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
 */
 
-=======
-#include <cstdlib>
-
-using namespace std;
-
-#ifdef __APPLE__
->>>>>>> Stashed changes
 #include <stdio.h>
 #include <vector>
 #include <string.h>
